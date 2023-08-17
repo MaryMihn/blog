@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div>
       <Header />
-      <p className="about">Cite cteate at july 2021</p>
+      <p className="about">Cite cteated</p>
     </div>
   );
 }

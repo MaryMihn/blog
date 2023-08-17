@@ -22,7 +22,8 @@ mongoose
     useFindAndModify: false,
   })
   .then(console.log("Connected to MongoDB"))
-  .catch((err) => console.log(err));
+  .catch((err) => {
+    console.error('MongoDB connection error:', err)});
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
@@ -44,6 +45,8 @@ app.use("/api/posts", postRoute);
 // app.use("/api/categories", categoryRoute);
 app.use("/api/category", categoryRoute);
 
-app.listen("5000", () => {
+
+
+app.listen("5001", () => {
   console.log("back");
 });

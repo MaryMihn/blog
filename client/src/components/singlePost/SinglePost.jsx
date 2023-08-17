@@ -5,7 +5,7 @@ import "./singlePost.css";
 import { Context } from "../../contex/Context";
 
 export default function SinglePost() {
-  const PF = "http://localhost:5000/images/";
+  const PF = "http://localhost:5001/images/";
   const location = useLocation();
   const path = location.pathname.split("/")[2];
   const [post, setPost] = useState({});
